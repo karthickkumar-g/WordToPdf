@@ -33,8 +33,13 @@ function Home() {
     formData.append("file", selectedFile);
 
     try {
+      // const response = await axios.post(
+      //   "http://localhost:3000/convertFile",
+      //   formData,
+      //   { responseType: "blob" }
+      // // );
       const response = await axios.post(
-        "http://localhost:3000/convertFile",
+        "https://word-to-r1x086al5-karthickkumar-2902s-projects.vercel.app/convertFile",
         formData,
         { responseType: "blob" }
       );
